@@ -1,0 +1,30 @@
+//check number is even or odd using flag
+import java.util.*;
+import java.util.Scanner;
+
+class Program5
+{
+    public static void CheckEvenOdd(int iNo)
+    {
+        int flag=0;
+        if(iNo%2==0)
+        {
+            flag=1;
+        }
+        if(flag==1)
+        {
+            System.out.print("Entered number is Even");
+        }
+        else
+        {
+            System.out.print("Entered number is Odd");
+        }
+    }
+    public static void main(String args[])
+    {
+        Scanner sobj = new Scanner(System.in);
+        System.out.print("Enter Number : ");
+        int iValue = sobj.nextInt();
+        CheckEvenOdd(iValue);
+    }
+}
