@@ -1,0 +1,31 @@
+//count Digit
+// Input : 1234
+// output : 4
+
+import java.util.*;
+import java.util.Scanner;
+
+class Program6
+{
+    public static void CountDigit(int iNo)
+    {
+        int iCnt=0;
+        while(iNo != 0)
+        {
+            int Digit = iNo%10;
+            iCnt++;
+            iNo = iNo/10;
+        }
+        System.out.print("Count of digit are : "+iCnt);
+
+    }
+    public static void main(String args[])
+    {
+        Scanner sobj = new Scanner(System.in);
+        System.out.print("Enter Number : ");
+        int iValue = sobj.nextInt();
+
+        CountDigit(iValue);
+
+    }
+}
