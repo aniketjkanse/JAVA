@@ -1,0 +1,32 @@
+//Even Digit Count
+//input : 2314
+//output : 2
+
+import java.util.*;
+import java.util.Scanner;
+
+class Program7
+{
+    public static void CheckEvenDigit(int iNo)
+    {
+        int iCnt=0;
+        while(iNo != 0)
+        {
+            int Digit = iNo%10;
+            if((Digit%2)==0)
+            {
+                iCnt++;
+            }
+            iNo = iNo/10;
+        }
+        System.out.print(iCnt);
+    }
+    public static void main(String args[])
+    {
+        Scanner sobj = new Scanner(System.in);
+        System.out.print("Enter Number : ");
+        int iValue = sobj.nextInt();
+
+        CheckEvenDigit(iValue);
+    }
+}
